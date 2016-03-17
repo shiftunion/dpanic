@@ -29,7 +29,7 @@ mongoose.connection.on('error', function() {
   console.info('Error: Could not connect to MongoDB. Did you forget to run `mongod`?'.red);
 });
 
-app.set('port', process.env.PORT || 3001);
+app.set('port', process.env.PORT || 3050);
 app.use(compression());
 app.use(logger('dev'));
 app.use(bodyParser.json());
